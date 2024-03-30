@@ -3,6 +3,7 @@ const qrcode = require('qrcode-terminal');
 const { getAIGeneratedAnswer }  = require('./AIModule');
 const { recommender }  = require('./recommender');
 const { fetchGasPrice } = require('./ETHGas');
+const { livePrice } = require('./livePrice');
 
 
 const client = new Client({
@@ -33,6 +34,17 @@ client.on('message', async(message) => {
         const aiResponse = await recommender(userPrompt);
         message.reply(aiResponse);
     }
+    else if (message.body.startsWith('@price ')) {
+        const coin = message.body.replace('@price ', '');
+        const prices = await livePrice(coin);
+        if (prices !== null) {
+            const usdPrice = prices.usd;
+            const inrPrice = prices.inr;
+            message.reply(`Price of ${coin.toUpperCase()} in USD: $${usdPrice}\nPrice of ${coin.toUpperCase()} in INR: ₹${inrPrice}`);
+        } else {
+            message.reply('Error fetching live price or invalid coin.');
+        }
+    } 
     else{
     //  (message.body.startsWith('')) {
         const userPrompt = message.body;
