@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const axios = require('axios');
 
 async function getCryptoMarketAnalysis() {
     try {
@@ -31,7 +32,6 @@ async function getCryptoMarketAnalysis() {
     }
 }
 
-// Example usage
 getCryptoMarketAnalysis()
     .then(marketAnalysis => {
         if (marketAnalysis) {
@@ -40,7 +40,6 @@ getCryptoMarketAnalysis()
             console.log('Total 24h Volume (USD):', marketAnalysis.total24hVolume);
             console.log('Bitcoin Dominance (%):', marketAnalysis.bitcoinDominance);
             console.log('Active Cryptocurrencies:', marketAnalysis.activeCryptocurrencies);
-            console.log('Total Cryptocurrencies:', marketAnalysis.totalCryptocurrencies);
         } else {
             console.log('Failed to fetch crypto market analysis.');
         }
@@ -48,3 +47,23 @@ getCryptoMarketAnalysis()
     .catch(error => {
         console.error('Error:', error);
     });
+
+// Function to fetch crypto market data
+async function getCryptoMarketData() {
+    try {
+        const response = await axios.get('https://api.coingecko.com/api/v3/global');
+        const marketData = response.data.data;
+
+        console.log('Crypto Market Insights:');
+        console.log('-----------------------');
+        console.log('Total Market Cap:', marketData.total_market_cap.usd);
+        console.log('Total 24h Volume:', marketData.total_volume.usd);
+        console.log('Bitcoin Dominance:', marketData.market_cap_percentage.btc.toFixed(2) + '%');
+        console.log('Active Cryptocurrencies:', marketData.active_cryptocurrencies);
+        console.log('Active Markets:', marketData.markets);
+    } catch (error) {
+        console.error('Error fetching crypto market data:', error);
+    }
+}
+
+getCryptoMarketData();
