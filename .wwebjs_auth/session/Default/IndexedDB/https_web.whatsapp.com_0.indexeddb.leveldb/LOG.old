@@ -1,0 +1,16 @@
+2024/03/30-18:42:25.521 f703 Reusing MANIFEST /Users/piyushbhawsar/Desktop/cypt-BOTSAPP/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/03/30-18:42:25.521 f703 Recovering log #249
+2024/03/30-18:42:25.564 f703 Reusing old log /Users/piyushbhawsar/Desktop/cypt-BOTSAPP/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000249.log 
+2024/03/30-20:02:25.788 11b33 Level-0 table #256: started
+2024/03/30-20:02:25.817 11b33 Level-0 table #256: 1471618 bytes OK
+2024/03/30-20:02:25.827 11b33 Delete type=0 #249
+2024/03/30-20:02:26.640 f72b Compacting 1@1 + 3@2 files
+2024/03/30-20:02:26.726 f72b Generated table #257@1: 53051 keys, 2263420 bytes
+2024/03/30-20:02:26.784 f72b Generated table #258@1: 34031 keys, 2181510 bytes
+2024/03/30-20:02:26.836 f72b Generated table #259@1: 54376 keys, 1135037 bytes
+2024/03/30-20:02:26.836 f72b Compacted 1@1 + 3@2 files => 5579967 bytes
+2024/03/30-20:02:26.843 f72b compacted to: files[ 0 0 3 0 0 0 0 ]
+2024/03/30-20:02:26.843 f72b Delete type=2 #256
+2024/03/30-20:02:26.844 f72b Delete type=2 #253
+2024/03/30-20:02:26.844 f72b Delete type=2 #252
+2024/03/30-20:02:26.844 f72b Delete type=2 #251

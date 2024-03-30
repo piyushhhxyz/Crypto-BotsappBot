@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@enzoferey/network-gas-price": "^0.3.6",
+    "axios": "^1.6.8",
+    "axios-retry": "^4.1.0",
+    "cheerio": "^1.0.0-rc.12",
+    "coingecko-api": "^1.0.10",
+    "isomorphic-unfetch": "^4.0.2",
+    "openai": "^4.30.0",
+    "puppeteer": "^22.6.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "qrcode": "^1.5.3",
+    "qrcode-terminal": "^0.12.0",
+    "web3": "^4.7.0",
+    "whatsapp-web.js": "^1.23.0"
+  }
+}
