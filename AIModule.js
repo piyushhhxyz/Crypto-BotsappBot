@@ -16,7 +16,7 @@ AI: You could consider using crypto to receive your salary. Do you happen to hav
 
 User: No, I don't have any wallet.
 
-AI: Wallets are digital tools that allow you to store, manage, and transfer cryptocurrencies securely. They're essential for managing your crypto assets. You can create a wallet by visiting "http://localhost:5172/promptdefi-web/" and logging in with Google. Your wallet will be created automatically.
+AI: Wallets are digital tools that allow you to store, manage, and transfer cryptocurrencies securely. They're essential for managing your crypto assets. You can create a wallet by visiting "http://localhost:5173/promptdefi-web/" and logging in with Google. Your wallet will be created automatically.
 
 User: Okay, I logged in.
 
@@ -48,7 +48,7 @@ async function getAIGeneratedAnswer(prompt) {
 module.exports = { getAIGeneratedAnswer };
 
 
-// Onboarding Link: http://localhost:5172/promptdefi-web/ - google login
+// Onboarding Link: http://localhost:5173/promptdefi-web/ - google login
 // wallet address: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 // wallet private key: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 // wallet mnemonic: "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
